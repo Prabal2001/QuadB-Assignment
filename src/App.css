@@ -1,0 +1,210 @@
+/* ============= Global Styles ============ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* ============= Navbar Styles ============ */
+.navbar {
+  width: 100%;
+  height: 8vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: green;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* ============= Home CSS ================ */
+.movie-list {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(193, 33, 33, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+}
+
+.movie-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.movie-title {
+  text-align: center;
+  margin: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.details-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background: red;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #0c0cff;
+}
+
+/* ============= Movie Details CSS ================ */
+.detail-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.movie-details {
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-detail-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.movie-detail-title span,
+.movie-detail-summary span,
+.movie-detail-language span,
+.movie-detail-premiered span,
+.movie-detail-rating span {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.book-ticket-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+a {
+  color: #1d1dff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* ============= Ticket Booking CSS ============ */
+.book-ticket-section {
+  width: 90%;
+  max-width: 800px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.book-ticket {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.book-ticket h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.movie-image img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.book-ticket form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #1d1dff;
+  border-radius: 6px;
+  outline: none;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.book {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.book button {
+  width: 100%;
+  padding: 10px;
+}
+
+/* ============= Responsive for all devices ============= */
+@media (max-width: 768px) {
+  .movie-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .movie-details {
+    margin: 60px auto;
+  }
+
+  .book-ticket {
+    margin: 60px auto;
+  }
+}
